@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Registration Form</h2>
+    </header>
+    <main>
+        <form onsubmit='return formValidation()' action="index.html" id=formid>
+            <p>
+                <label><b>First Name: </b></label>
+                <input type="text" placeholder="Enter First Name" id="fname" onblur="CheckFirstName()" required></p>
+            <div id="first">
+                <p id="FirstNameError"></p>
+            </div>
+
+
+            <p>
+                <label><b>Last Name: </b></label>
+                <input type="text" placeholder="Enter Last Name" id="lname" onblur="CheckLastName()"></p>
+            <div id="last">
+                <p id="LastNameError"></p>
+            </div>
+
+
+            <p>
+                <label><b>Phone Number: </b></label>
+                <input type="text" placeholder="Enter Phone Number" id="phone-number" onblur="CheckContactNumber()" required></p>
+            <div id="phoneerror">
+                <p id="PhoneNumberError"></p>
+            </div>
+            <p>
+                <label><b>Email: </b></label>
+                <input type="email" placeholder="Enter Email" id="email" onblur="CheckEmail()" required></p>
+            <div id="emailerror">
+                <p id="EmailError"></p>
+            </div>
+
+            <p>
+                <label><b>Address</b></label>
+                <textarea rows="4" id="address" onblur="CheckAddress()"></textarea></p>
+            <div id="addresserror">
+                <p id="AddressError"></p>
+            </div>
+
+            <p><label><b>City</b></label><br><br>
+                <select id="city" name="city" onblur="CheckCity()">
+                    <option value="0">Select</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Pune</option>
+                    <option value="3">Banglore</option>
+                    <option value="4">Hydrabad</option>
+                    <option value="5">Delhi</option>
+                    <option value="6">Other</option>
+                </select></p>
+            <div id="cityerror">
+                <p id="CityError"></p>
+            </div>
+            <label><b>Gender</b></label>
+            <p class="radio">
+                <input type="radio" name="gender" value="male" onblur="CheckGender()"> Male
+                <input type="radio" name="gender" value="female" onblur="CheckGender()"> Female
+                <input type="radio" name="gender" value="Trans" onblur="CheckGender()"> Trans</p>
+            <div id="gendererror">
+                <p id="GenderError"></p>
+            </div>
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">Register</button>
+                <button type="button" class="cancelbtn" onclick="Reset()">Cancel</button>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

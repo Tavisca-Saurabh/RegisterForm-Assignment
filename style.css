@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
+
+header {
+    font-size: 20pt;
+}
+
+form {
+    margin: auto;
+    width: 40%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 5%;
+}
+
+label {
+    float: left;
+    padding-bottom: 2%;
+
+}
+
+input[type=text],
+textarea,
+input[type=number],
+input[type=email] {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+select {
+    width: 99%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.radio {
+    padding-right: 66%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 1px;
+    margin: 8px 0;
+    width: 30%;
+}
+
+.cancelbtn {
+    padding: 14px 1px;
+    background-color: #f44336;
+}
